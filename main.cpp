@@ -1,3 +1,8 @@
+//These comments tell what is intended to happen, not what will happen.
+
+
+
+
 #include <iostream>
 #include <string>
 
@@ -5,7 +10,7 @@
 using namespace std;
 
 
-//Client or server?
+//This variable tells if the program should be a client or a server.
 string Role;
 
 
@@ -15,11 +20,14 @@ auto Log = [] (const string& LogMessage) {
 };
 
 int main () {
+	//Asking the user to input CLIENT or SERVER.
 	cout << "Choose role CLIENT or SERVER (type it here and press enter):";
 	cin >> Role;
 	cout << endl;;
 	
+	//This checks if the input is valid.
 	if (Role == CLIENT || Role == SERVER) {
+		//Runs client or server.
 		if (Role == CLIENT) {
 			client();
 		}
@@ -27,6 +35,7 @@ int main () {
 			server();
 		}
 	}
+	//If the input is not valid.
 	else {
 		cout << "INVALID INPUT! PROGRAM SHUTTING DOWN";
 	}
