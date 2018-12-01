@@ -31,7 +31,7 @@ int main () {
 		if (Role == CLIENT) {
 			client();
 		}
-		if (Role == SERVER) {
+		else if (Role == SERVER) {
 			server();
 		}
 	}
