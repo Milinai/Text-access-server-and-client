@@ -31,12 +31,12 @@ int main () {
 	cout << endl;;
 
 	//This checks if the input is valid.
-	if (Role == CLIENT || Role == SERVER) {
+	if (Role == "CLIENT" || Role == "SERVER") {
 		//Runs client or server.
-		if (Role == CLIENT) {
+		if (Role == "CLIENT") {
 			//client();
 		}
-		else if (Role == SERVER) {
+		else if (Role == "SERVER") {
 			server();
 		}
 	}
