@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
 
 //Logger that I took from a socket.cpp example.
 auto Log = [] (const string& LogMessage) {
@@ -15,7 +16,6 @@ auto Log = [] (const string& LogMessage) {
 #include "client.cpp"
 #include "server.cpp"
 
-using namespace std;
 
 
 //This variable tells if the program should be a client or a server.
@@ -29,7 +29,7 @@ int main () {
 	cout << "Choose role CLIENT or SERVER (type it here and press enter):";
 	cin >> Role;
 	cout << endl;;
-	
+
 	//This checks if the input is valid.
 	if (Role == CLIENT || Role == SERVER) {
 		//Runs client or server.
@@ -44,6 +44,6 @@ int main () {
 	else {
 		cout << "INVALID INPUT! PROGRAM SHUTTING DOWN";
 	}
-	
+
 	return 0;
 }
