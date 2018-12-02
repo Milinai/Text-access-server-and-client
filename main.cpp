@@ -32,7 +32,7 @@ int main () {
 	if (Role == CLIENT || Role == SERVER) {
 		//Runs client or server.
 		if (Role == CLIENT) {
-			client();
+			//client();
 		}
 		else if (Role == SERVER) {
 			server();
