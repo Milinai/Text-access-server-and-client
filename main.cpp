@@ -6,6 +6,9 @@
 #include <iostream>
 #include <string>
 
+//Please do not complain about this...
+#include "client.cpp"
+#include "server.cpp"
 
 using namespace std;
 
