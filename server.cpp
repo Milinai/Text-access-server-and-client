@@ -5,7 +5,9 @@
 
 using namespace std;
 
-void server (int Port, string Text) {
+void server () {
+	int Port;
+	string Text;
 	
 	//Asks the port number from the user.
 	cout << "Please enter a port number: ";
@@ -24,9 +26,9 @@ void server (int Port, string Text) {
 	//This happens untill the program is closed.
 	while (true) {
 		//Listening untill something happens.
-		if ((*Server).listen(Connection)) {
+		if (Server.Listen(Connection)) {
 			//Sends the text to the client.
-			(*Server).send(Connection, Text)
+			Server.Send(Connection, Text)
 		}
 			//And if something goes wrong...
 			else {
