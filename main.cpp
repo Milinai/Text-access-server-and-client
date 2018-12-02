@@ -4,6 +4,13 @@
 #include <iostream>
 #include <string>
 
+
+//Logger that I took from a socket.cpp example.
+auto Log = [] (const string& LogMessage) {
+	cout << LogMessage << endl;
+};
+
+
 //Please do not complain about this...
 #include "client.cpp"
 #include "server.cpp"
@@ -15,10 +22,7 @@ using namespace std;
 string Role;
 
 
-//Logger that I took from a socket.cpp example.
-auto Log = [] (const string& LogMessage) {
-	cout << LogMessage << endl;
-};
+
 
 int main () {
 	//Asking the user to input CLIENT or SERVER.
