@@ -16,7 +16,7 @@ void server (int Port, string Text) {
 	cin >> Text;
 	
 	//Creates the server.
-	CTCPServer server(Log, Port);
+	CTCPServer Server(Log, Port);
 	
 	//"scket of the connected client"
 	ASocket::Socket Connection;
@@ -24,9 +24,9 @@ void server (int Port, string Text) {
 	//This happens untill the program is closed.
 	while (true) {
 		//Listening untill something happens.
-		if ((*m_pTCPServer).listen(Connection)) {
+		if ((*Server).listen(Connection)) {
 			//Sends the text to the client.
-			(*m_pTCPServer).send(Connection, Text)
+			(*Server).send(Connection, Text)
 		}
 			//And if something goes wrong...
 			else {
