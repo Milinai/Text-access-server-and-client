@@ -33,4 +33,5 @@ void server (int Port, string Text) {
 				cout << "Something went wrong";
 		}
 	}
+}
 	
