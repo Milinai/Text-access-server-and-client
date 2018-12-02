@@ -1,8 +1,6 @@
 //These comments tell what is intended to happen, not what will happen.
 
 
-
-
 #include <iostream>
 #include <string>
 

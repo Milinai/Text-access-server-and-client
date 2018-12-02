@@ -19,7 +19,7 @@ void server (int Port, string Text) {
 	CTCPServer server(Log, Port);
 	
 	//"scket of the connected client"
-	ASocket::Socket Connection
+	ASocket::Socket Connection;
 	
 	//This happens untill the program is closed.
 	while (true) {
