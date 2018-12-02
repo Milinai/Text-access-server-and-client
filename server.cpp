@@ -27,7 +27,7 @@ void server (int Port, string Text) {
 		if ((*m_pTCPServer).listen(Connection)) {
 			//Sends the text to the client.
 			(*m_pTCPServer).send(Connection, Text)
-			
+		}
 			//And if something goes wrong...
 			else {
 				cout << "Something went wrong";
