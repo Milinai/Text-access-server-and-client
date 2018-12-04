@@ -1,5 +1,5 @@
 //If you want more info, see https://github.com/embeddedmz/socket-cpp
-
+//If you don't want more info, fine then.
 
 #include "TCPServer.h"
 
