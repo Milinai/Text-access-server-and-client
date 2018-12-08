@@ -12,7 +12,12 @@ auto Log = [] (const string& LogMessage) {
 };
 
 
-//Please do not complain about this...
+/* 
+	I split the code in three files and I did it because i think
+	it looks better this way. I did not make separate .h and .cpp libraries,
+	because I could have writed everything here, so imagine the code
+	from the other files is just here.
+*/
 #include "client.cpp"
 #include "server.cpp"
 
