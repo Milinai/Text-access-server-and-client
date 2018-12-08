@@ -39,10 +39,10 @@ int main () {
 	if (Role == "CLIENT" || Role == "SERVER") {
 		//Runs client or server.
 		if (Role == "CLIENT") {
-			client();
+			Client();
 		}
 		else if (Role == "SERVER") {
-			server();
+			Server();
 		}
 	}
 	//If the input is not valid.

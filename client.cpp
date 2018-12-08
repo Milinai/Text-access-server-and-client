@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void client () {
+void Client () {
 	//This is not supported yet...
 	cout << "Client not supported yet, shutting down...";
 }

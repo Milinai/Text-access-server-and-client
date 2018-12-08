@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void server () {
+void Server () {
 	int Port;
 	string Text;
 	
