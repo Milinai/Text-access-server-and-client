@@ -6,17 +6,12 @@
 
 using namespace std;
 
-//
-void Log (const string& Message) {
-	cout << Message;
-}
 
-void (*Log) (const string&) = &Log;
 
 
 /* 
 	I split the code in three files and I did it because i think
-	it looks better this way. I did not make separate .h and .cpp libraries,
+	it looks better this way. I did not make separate .h and .cpp files,
 	because I could have writed everything here, so imagine the code
 	from the other files is just here.
 */
@@ -32,6 +27,7 @@ string Role;
 
 
 int main () {
+	auto LogPrinter = [](const std::string& strLogMsg) { std::cout << strLogMsg << std::endl;  };
 	//Asking the user to input CLIENT or SERVER.
 	cout << "Choose role CLIENT or SERVER (type it here and press enter):";
 	cin >> Role;

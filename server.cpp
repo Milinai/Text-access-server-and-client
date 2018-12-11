@@ -18,7 +18,7 @@ void Server () {
 	cin >> Text;
 	
 	//Creates the server.
-	CTCPServer Server(Log, Port);
+	CTCPServer Server(LogPrinter, Port);
 	
 	//"scket of the connected client"
 	ASocket::Socket Connection;
