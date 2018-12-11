@@ -8,6 +8,7 @@ using namespace std;
 void Server () {
 	int Port;
 	string Text;
+	auto LogPrinter = [](const std::string& strLogMsg) { std::cout << strLogMsg << std::endl;  }
 	
 	//Asks the port number from the user.
 	cout << "Please enter a port number: ";
@@ -20,7 +21,7 @@ void Server () {
 	//Creates the server.
 	CTCPServer Server(LogPrinter, Port);
 	
-	//"scket of the connected client"
+	//"socket of the connected client"
 	ASocket::Socket Connection;
 	
 	//This happens untill the program is closed.
