@@ -6,10 +6,12 @@
 
 using namespace std;
 
-//Logger that I took from a socket.cpp example.
-auto Log = [] (const string& LogMessage) {
-	cout << LogMessage << endl;
-};
+//
+void Log (const string& Message) {
+	cout << Message;
+}
+
+void (*Log) (const string&) = &Log;
 
 
 /* 

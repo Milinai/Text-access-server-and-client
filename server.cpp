@@ -26,9 +26,9 @@ void Server () {
 	//This happens untill the program is closed.
 	while (true) {
 		//Listening untill something happens.
-		if (Server->Listen(Connection)) {
+		if (Server.Listen(Connection)) {
 			//Sends the text to the client.
-			Server->Send(Connection, Text)
+			Server.Send(Connection, Text);
 		}
 			//And if something goes wrong...
 			else {
